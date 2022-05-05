@@ -1,36 +1,22 @@
-<?php
+<?php  require_once "services.php" ?>
 
-
-$classMars = [
-    ["name" => "Florian" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Emmanuel" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Hakim" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Tristan" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Anis" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Laurent" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Anthony" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Nathan" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Kevin" , "lunettes" => mt_rand(0,1)],
-    ["name" => "William" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Daouda" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Hajara" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Soufiane" , "lunettes" => mt_rand(0,1)],
-    ["name" => "Christopher" , "lunettes" => mt_rand(0,1)],
-];
-
-$userLunette = [];
-
-foreach ($classMars as $user) {       
-        if($user["lunettes"]==1){      
-            array_push($userLunette,$user["name"]);               
-        }
-    }
-
-echo "<p> Nombre de personne portant des lunettes : " .count($userLunette). "<br>Voici les noms : ".implode(", ",$userLunette)."</p>";
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>TP Qui Est-ce ?</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Qui a des lunettes ?</h1>
+        <div class="row ">            
+                <?php foreach($usersLunette as $userUnique ):?>
+                    <?php require "card.php" ?>
+                <?php endforeach;?>            
+        </div>
+    </div>
+</body>
+</html>
