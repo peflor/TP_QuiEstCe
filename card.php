@@ -5,6 +5,6 @@
     <div class="card-header bg-dark text-white ">
         <h2 class="card-title"><?= ucwords($user["name"]) ?></h2>
     </div>
-    <div class="card-body">      
+    <div class="card-body">              
     </div>    
 </div>

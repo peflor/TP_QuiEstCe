@@ -12,10 +12,12 @@
 <body>
     <div class="container">
         <h1 class="text-center">Qui a des lunettes ?</h1>
-        <div class="row ">            
+        <div class="row card-deck">            
                 <?php foreach($classMars as $user ):?>
-                    <?php require "card.php" ?>
-                <?php endforeach;?>            
+                    <?php require "card.php" ?>                    
+                <?php endforeach;?>
+                <div class="card-body">                
+                </div>            
         </div>
     </div>
 </body>
