@@ -13,7 +13,7 @@
     <div class="container">
         <h1 class="text-center">Qui a des lunettes ?</h1>
         <div class="row ">            
-                <?php foreach($usersLunette as $userUnique ):?>
+                <?php foreach($classMars as $user ):?>
                     <?php require "card.php" ?>
                 <?php endforeach;?>            
         </div>

@@ -18,13 +18,13 @@ $classMars = [
     ["name" => "Christopher" , "lunettes" => mt_rand(0,1)],
 ];
 
-$usersLunette = [];
+// $usersLunette = [];
 
-foreach ($classMars as $user) {       
-    if($user["lunettes"]==1){      
-        array_push($usersLunette,$user["name"]);               
-    }
-}
+// foreach ($classMars as $user) {       
+//     if($user["lunettes"]==1){      
+//         array_push($usersLunette,$user["name"]);               
+//     }
+// }
 
 
 
