@@ -2,26 +2,26 @@
 
 
 $classMars = [
-    ["name" => "Florian" , "lunettes" => false],
-    ["name" => "Emmanuel" , "lunettes" => true],
-    ["name" => "Hakim" , "lunettes" => false],
-    ["name" => "Tristan" , "lunettes" => false],
-    ["name" => "Anis" , "lunettes" => false],
-    ["name" => "Laurent" , "lunettes" => false],
-    ["name" => "Anthony" , "lunettes" => true],
-    ["name" => "Nathan" , "lunettes" => false],
-    ["name" => "Kevin" , "lunettes" => false],
-    ["name" => "William" , "lunettes" => false],
-    ["name" => "Daouda" , "lunettes" => false],
-    ["name" => "Hajara" , "lunettes" => false],
-    ["name" => "Soufiane" , "lunettes" => false],
-    ["name" => "Christopher" , "lunettes" => true],
+    ["name" => "Florian" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Emmanuel" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Hakim" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Tristan" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Anis" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Laurent" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Anthony" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Nathan" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Kevin" , "lunettes" => mt_rand(0,1)],
+    ["name" => "William" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Daouda" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Hajara" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Soufiane" , "lunettes" => mt_rand(0,1)],
+    ["name" => "Christopher" , "lunettes" => mt_rand(0,1)],
 ];
 
 $userLunette = [];
 
-    foreach ($classMars as $user) {    
-        if($user["lunettes"]==true){      
+foreach ($classMars as $user) {       
+        if($user["lunettes"]==1){      
             array_push($userLunette,$user["name"]);               
         }
     }
